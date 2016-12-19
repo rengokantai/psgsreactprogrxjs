@@ -69,3 +69,10 @@ edit
   }
 }
 ```
+
+###7 Using fetch and Promises
+####3:50 lazy loading
+```
+return Observable.defer(()=>{
+})
+```
