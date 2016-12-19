@@ -76,3 +76,17 @@ edit
 return Observable.defer(()=>{
 })
 ```
+
+##4. Working with Observable Data
+###3 Dealing with Errors and Exceptions
+```
+let source = Observable.merge(
+  Observable.of(1),
+  Observable.from([2,3,4]),
+  Observable.throw(new Error("stop"))
+);
+```
+Resume errors
+```
+Observable.onerrorResumeNext
+```
