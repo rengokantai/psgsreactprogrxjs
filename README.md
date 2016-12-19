@@ -48,4 +48,23 @@ module.exports = {
   }
 }
 ```
-stop at 5:00
+
+
+##3. Working with Observables
+###6 Set up to Use the New Fetch Standard
+```
+node_modules\.bin\typings uninstall dt~es6-shim --global --save 
+node_modules\.bin\typings install dt~whatwg-streams --global --save 
+node_modules\.bin\typings install dt~whatwg-fetch --global --save 
+```
+tsconfig.json
+edit
+```
+{
+  "compilerOptions":{
+    "target":"es6",
+    "module":"commonjs",
+    "sourceMap":true
+  }
+}
+```
