@@ -32,6 +32,7 @@ then
 ```
 touch webpack.config.js
 ```
+```
 module.exports = {
   entry:"./main",
   output:{filename:'app.js'},
